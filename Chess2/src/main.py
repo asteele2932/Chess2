@@ -47,29 +47,29 @@ def row(EorO: str, Hposition: int, Vposition: int):
             Hposition += (68.75 * 2)
 
 def board_squares():
-    Hposition = 160
+    Hposition = 160 + 68.75
     Vposition = 62
 
     row('even', Hposition, Vposition)
-    Hposition += 68.75
-    Vposition += 68.75
-    row('odd', Hposition, Vposition)
     Hposition = 160
     Vposition += 68.75
-    row('even', Hposition, Vposition)
+    row('odd', Hposition, Vposition)
     Hposition += 68.75
     Vposition += 68.75
-    row('odd', Hposition, Vposition)
+    row('even', Hposition, Vposition)
     Hposition = 160
     Vposition += 68.75
-    row('even', Hposition, Vposition)
+    row('odd', Hposition, Vposition)
     Hposition += 68.75
     Vposition += 68.75
-    row('odd', Hposition, Vposition)
+    row('even', Hposition, Vposition)
     Hposition = 160
     Vposition += 68.75
-    row('even', Hposition, Vposition)
+    row('odd', Hposition, Vposition)
     Hposition += 68.75
+    Vposition += 68.75
+    row('even', Hposition, Vposition)
+    Hposition = 160
     Vposition += 68.75
     row('odd', Hposition, Vposition)
 
